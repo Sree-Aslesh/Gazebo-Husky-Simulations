@@ -8,8 +8,8 @@
       <uri>model://sun</uri>
     </include>
     <include>
-      <uri>model://husky</uri>
-      <name>husky</name>
+      <uri>model://huskysim</uri>
+      <name>husky_sim</name>
       <pose>-0.0 0.0 0 0 0 0</pose>
     </include>
     <include>
