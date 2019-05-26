@@ -15,6 +15,7 @@
       </visual>
       <sensor name="laser" type="ray">
         <pose>0.01 0 0.03 0 -0 0</pose>
+        <topic>~/laser_scan</topic>
         <ray>
           <scan>
             <horizontal>
@@ -31,12 +32,10 @@
           </range>
         </ray>
 
-        <plugin name="laser" filename="libRayPlugin.so" />
+        <plugin name="laser" filename="libgazebo_ros_laser.so"/>
         <always_on>1</always_on>
         <update_rate>30</update_rate>
         <visualize>true</visualize>
-        <topicName>/huskysim/laserscans</topicName>
-        <frameName>/huskysim/laser_frame</frameName>
       </sensor>
     </link>
   </model>
